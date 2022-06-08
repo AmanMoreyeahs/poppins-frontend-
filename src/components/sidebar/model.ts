@@ -33,3 +33,14 @@ export interface PrivateRoutes {
   path: string;
   exact: boolean;
 }
+export interface Header {
+  logo?: any;
+  title?: string;
+  subTitle?: string;
+  Icon?: any;
+  subIcon?: any;
+}
+export interface Button {
+  title: string;
+  icon?: any;
+}

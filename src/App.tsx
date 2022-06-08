@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.less";
+import Routers from "./route";
 
 const App: React.FC = () => {
   return (
-    <div >
-      <p>hello</p>
+    <div>
+      <Routers></Routers>
     </div>
   );
 };

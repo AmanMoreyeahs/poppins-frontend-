@@ -8,6 +8,7 @@ import { Home } from "../pages/home/home";
 import { Login } from "../pages/Authentication/login/login";
 import { PrivateRoutes, PublicRoutes } from "../components/sidebar/model";
 import { CreateCatalog } from "../pages/myshop/catalog/createCatalog";
+import { Order } from "../pages/order/order";
 
 const Routers: React.FC = () => {
   const publicRoutes: PublicRoutes[] = [
@@ -36,6 +37,12 @@ const Routers: React.FC = () => {
       key: 3,
       path: ROUTES.CREATE_CATALOG,
       component: CreateCatalog,
+      exact: false,
+    },
+    {
+      key: 4,
+      path: ROUTES.ORDER,
+      component: Order,
       exact: false,
     },
 

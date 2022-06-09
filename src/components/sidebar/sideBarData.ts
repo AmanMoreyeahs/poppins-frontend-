@@ -50,7 +50,7 @@ export const SidebarData: SideMenu[] = [
   },
   {
     title: TITLE.ORDERS,
-    path: "#",
+    path: ROUTES.ORDER,
     icon: ShoppingCartOutlined,
   },
   {

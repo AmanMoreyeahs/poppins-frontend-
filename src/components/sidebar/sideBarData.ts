@@ -33,7 +33,7 @@ export const SidebarData: SideMenu[] = [
     subNav: [
       {
         title: TITLE.CATALOG,
-        path: ROUTES.CATALOG,
+        path: "#",
         icon: ArrowRightOutlined,
       },
       {

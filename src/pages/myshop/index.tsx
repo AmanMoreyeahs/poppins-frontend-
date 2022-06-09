@@ -7,7 +7,10 @@ import {
 import { PNG } from "../../assets";
 import { CreateButton, HeaderTitle } from "../component";
 import { ShopButtonSection, ShopCart } from "../component/style";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../route/constant";
 export const MyShop = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <HeaderTitle
@@ -29,7 +32,7 @@ export const MyShop = () => {
             </p>
           </div>
           <ShopButtonSection>
-            <div>
+            <div onClick={() => navigate(ROUTES.CREATE_CATALOG)}>
               <CreateButton title={"Create Catalog"} />
             </div>
             <div>

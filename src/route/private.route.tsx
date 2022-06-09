@@ -3,6 +3,7 @@ import { Navigate } from "react-router-dom";
 import { ROUTES } from "./constant";
 import { isLogin } from "../utils/isLogin";
 import { Props } from "../components/sidebar/model";
+import { AppLayout } from "../components/layout";
 
 /**
  *
@@ -11,7 +12,9 @@ import { Props } from "../components/sidebar/model";
  */
 const PrivateRoute: React.FC<Props> = ({ component: Component, ...props }) => {
   return isLogin() ? (
-    <Component {...props} />
+    <AppLayout>
+      <Component {...props} />
+    </AppLayout>
   ) : (
     <Navigate replace to={ROUTES.INDEX} />
   );

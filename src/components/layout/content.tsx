@@ -5,8 +5,7 @@ import { Children } from "../sidebar/model";
 
 const { Content } = Layout;
 
-
-export const AppContent:React.FC<Children> = ({ children }) => {
+export const AppContent: React.FC<Children> = ({ children }) => {
   return (
     <Content
       style={{

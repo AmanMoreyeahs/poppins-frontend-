@@ -14,7 +14,7 @@ const PublicRoute: React.FC<PublicProps> = ({
   restricted,
   ...props
 }) => {
-  return isLogin() && !restricted ? (
+  return isLogin() && restricted ? (
     <Navigate replace to={ROUTES.DASHBOARD} />
   ) : (
     <Component {...props} />

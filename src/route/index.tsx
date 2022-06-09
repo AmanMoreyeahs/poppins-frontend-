@@ -5,12 +5,12 @@ import PrivateRoute from "./private.route";
 import { ROUTES } from "./constant";
 import { MyShop } from "../pages/myshop";
 import { Home } from "../pages/home/home";
-import { AppLayout } from "../components/layout";
 import { Login } from "../pages/login/login";
 import { PrivateRoutes, PublicRoutes } from "../components/sidebar/model";
+import { CreateCatalog } from "../pages/myshop/catalog/createCatalog";
 
 const Routers: React.FC = () => {
-  const publicRoutes:PublicRoutes[] = [
+  const publicRoutes: PublicRoutes[] = [
     {
       key: 1,
       path: ROUTES.INDEX,
@@ -19,7 +19,7 @@ const Routers: React.FC = () => {
     },
   ];
 
-  const privateRoutes:PrivateRoutes[] = [
+  const privateRoutes: PrivateRoutes[] = [
     {
       key: 1,
       component: MyShop,
@@ -27,40 +27,45 @@ const Routers: React.FC = () => {
       exact: true,
     },
     {
-      key: 1,
+      key: 2,
       path: ROUTES.DASHBOARD,
       component: Home,
       exact: false,
     },
+    {
+      key: 3,
+      path: ROUTES.CREATE_CATALOG,
+      component: CreateCatalog,
+      exact: false,
+    },
+
   ];
 
   return (
     <Router>
-      <AppLayout>
-        <Routes>
-          {publicRoutes.map((i) => (
-            <Route
-              path={i?.path}
-              key={i?.key}
-              element={
-                <PublicRoute
-                  restricted={i?.restricted}
-                  key={i?.key}
-                  component={i?.component}
-                />
-              }
-            />
-          ))}
+      <Routes>
+        {publicRoutes.map((i) => (
+          <Route
+            path={i?.path}
+            key={i?.key}
+            element={
+              <PublicRoute
+                restricted={i?.restricted}
+                key={i?.key}
+                component={i?.component}
+              />
+            }
+          />
+        ))}
 
-          {privateRoutes.map((i) => (
-            <Route
-              path={i?.path}
-              key={i?.key}
-              element={<PrivateRoute key={i?.key} component={i?.component} />}
-            />
-          ))}
-        </Routes>
-      </AppLayout>
+        {privateRoutes.map((i) => (
+          <Route
+            path={i?.path}
+            key={i?.key}
+            element={<PrivateRoute key={i?.key} component={i?.component} />}
+          />
+        ))}
+      </Routes>
     </Router>
   );
 };

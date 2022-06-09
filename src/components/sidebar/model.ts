@@ -5,7 +5,7 @@ export type MenuData = {
 };
 export type SideMenu = {
   title: string;
-  path: string;
+  path?: string;
   icon: any;
   iconClosed?: any;
   iconOpened?: any;
@@ -39,6 +39,7 @@ export interface Header {
   subTitle?: string;
   Icon?: any;
   subIcon?: any;
+  type?:string
 }
 export interface Button {
   title: string;

@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { SidebarLink, SidebarLabel, DropdownLink } from "../style";
 
 export const SubMenu = ({ item }: { item: any }) => {
   const [subnav, setSubnav] = useState<boolean>(false);
 
   const showSubnav = () => setSubnav(!subnav);
-  console.log(item);
   return (
     <>
       <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
@@ -26,9 +25,9 @@ export const SubMenu = ({ item }: { item: any }) => {
         </div>
       </SidebarLink>
       {subnav &&
-        item.subNav.map((props: any) => {
+        item.subNav.map((props: any, index: any) => {
           return (
-            <DropdownLink to={props.path}>
+            <DropdownLink to={props.path} key={index}>
               <props.icon />
               <SidebarLabel>{props.title}</SidebarLabel>
             </DropdownLink>

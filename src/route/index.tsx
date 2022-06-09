@@ -5,7 +5,7 @@ import PrivateRoute from "./private.route";
 import { ROUTES } from "./constant";
 import { MyShop } from "../pages/myshop";
 import { Home } from "../pages/home/home";
-import { Login } from "../pages/login/login";
+import { Login } from "../pages/Authentication/login/login";
 import { PrivateRoutes, PublicRoutes } from "../components/sidebar/model";
 import { CreateCatalog } from "../pages/myshop/catalog/createCatalog";
 

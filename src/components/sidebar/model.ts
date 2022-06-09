@@ -16,7 +16,7 @@ export interface Props {
 }
 export interface PublicProps {
   component: any;
-  restricted:boolean
+  restricted: boolean;
 }
 export interface Children {
   children: any;
@@ -39,7 +39,7 @@ export interface Header {
   subTitle?: string;
   Icon?: any;
   subIcon?: any;
-  type?:string
+  type?: string;
 }
 export interface Button {
   title: string;

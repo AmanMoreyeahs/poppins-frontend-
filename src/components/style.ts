@@ -44,6 +44,7 @@ export const SidebarNav = styled.nav`
   width: 256px;
   height: 100vh;
   display: flex;
+  padding: 0px 20px;
   justify-content: center;
   top: 1;
   transition: 350ms;

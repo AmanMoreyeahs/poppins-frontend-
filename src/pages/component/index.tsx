@@ -43,3 +43,4 @@ export const CreateButton: React.FC<Button> = ({ title, icon }) => {
 export const CButton = ({ title }: { title: any }) => {
   return <CatalogButton>{title}</CatalogButton>;
 };
+

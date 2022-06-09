@@ -17,8 +17,8 @@ export const AppContent: React.FC<Children> = ({ children }) => {
         <div>
           <Sidebar />
         </div>
-        {/* <div className="content-div">{children}</div> */}
-        <div className="break-content-div">{children}</div>
+        <div className="content-div">{children}</div>
+        {/* <div className="break-content-div">{children}</div> */}
       </div>
     </Content>
   );

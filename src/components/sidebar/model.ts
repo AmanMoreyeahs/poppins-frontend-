@@ -45,3 +45,7 @@ export interface Button {
   title: string;
   icon?: any;
 }
+export interface ModalProps {
+  visible?: boolean;
+  setvisible?: any;
+}

@@ -1,12 +1,16 @@
+import { Modal } from "antd";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+export const primaryPurple = "#974098";
+export const colorGrey = "#4a4a4a";
+export const colorWhite = "#ffffff";
 export const SidebarLink = styled(Link)`
   display: flex;
   color: #000000;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 15px 30px;
   list-style: none;
   height: 60px;
   text-decoration: none;
@@ -14,16 +18,17 @@ export const SidebarLink = styled(Link)`
   font-weight: 500;
   line-height: 18px;
   &:hover {
-    background: #e37826;
+    background: ${primaryPurple};
     cursor: pointer;
-    color: #ffffff;
+    color: ${colorWhite};
+    border-radius:5px;
   }
 `;
 export const SidebarLabel = styled.span`
   margin-left: 16px;
 `;
 export const DropdownLink = styled(Link)`
-  background: #ffffff;
+  background: ${colorWhite};
   height: 60px;
   padding-left: 3rem;
   display: flex;
@@ -36,12 +41,12 @@ export const DropdownLink = styled(Link)`
   text-align: left;
   &:hover {
     cursor: pointer;
-    color: #e37826;
+    color: ${primaryPurple};
   }
 `;
 export const SidebarNav = styled.nav`
-  background: #ffffff;
-  width: 256px;
+  background: ${colorWhite};
+  width: 300px;
   height: 100vh;
   display: flex;
   padding: 0px 20px;
@@ -55,4 +60,13 @@ export const SidebarNav = styled.nav`
 export const SidebarWrap = styled.div`
   width: 100%;
   margin-top: 10px;
+`;
+export const ModalWrapper = styled(Modal)`
+  .ant-modal-content {
+    background-color: ${colorWhite};
+    border-radius: 9px;
+    box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.16);
+    width: 426px;
+    height: 370px;
+  }
 `;

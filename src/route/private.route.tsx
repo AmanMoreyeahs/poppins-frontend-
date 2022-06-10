@@ -2,7 +2,7 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 import { ROUTES } from "./constant";
 import { isLogin } from "../utils/isLogin";
-import { Props } from "../components/sidebar/model";
+import { Props } from "../Model/model";
 import { AppLayout } from "../components/layout";
 
 /**

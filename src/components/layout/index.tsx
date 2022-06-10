@@ -3,8 +3,8 @@ import { AppFooter } from "./footer";
 import { AppHeader } from "./header";
 import { Layout } from "antd";
 import { AppContent } from "./content";
-import "./index.css";
-import { Children } from "../sidebar/model";
+import "./layout.less";
+import { Children } from "../../Model/model";
 
 export const AppLayout: React.FC<Children> = ({ children }) => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
-import { PublicProps } from "../components/sidebar/model";
+import { PublicProps } from "../Model/model";
 import { isLogin } from "../utils/isLogin";
 import { ROUTES } from "./constant";
 /**

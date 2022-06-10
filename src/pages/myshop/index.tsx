@@ -1,4 +1,4 @@
-import "./index.css";
+import "./myShop.less";
 import { useState } from "react";
 import {
   ShareAltOutlined,

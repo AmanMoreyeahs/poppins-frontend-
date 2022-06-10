@@ -1,3 +1,4 @@
+@import "../../App.less";
 .header {
   padding: 1.2% 1.5%;
   top: 0;
@@ -7,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #e37826;
+  background-color: @primaryPurple;
 }
 .icon-div {
   display: flex;
@@ -17,12 +18,12 @@
 }
 .head-icon {
   font-size: 25px;
-  color: white;
+  color: white !important;
 }
 .poppin-logo {
   width: 86px;
   height: 25px;
-  background: white;
+  background: @primaryPurple;
 }
 .content-div {
   height: 100vh !important;
@@ -42,7 +43,7 @@
   background: #f4f5fd;
 }
 .footer-title {
-  color: #4a4a4a;
+  color: @color-grey;
   font-size: 14px;
   line-height: 46px;
   text-align: center;

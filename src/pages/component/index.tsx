@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Header } from "../../components/sidebar/model";
+import { Button, Header } from "../../Model/model";
 import { CatalogButton, ShopButton } from "./style";
 export const HeaderTitle: React.FC<Header> = ({
   logo,
@@ -43,4 +43,5 @@ export const CreateButton: React.FC<Button> = ({ title, icon }) => {
 export const CButton = ({ title }: { title: any }) => {
   return <CatalogButton>{title}</CatalogButton>;
 };
+
 

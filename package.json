@@ -52,6 +52,6 @@
     ]
   },
   "devDependencies": {
-    "craco-less": "^2.0.0"
+    "craco-antd": "^2.0.0"
   }
 }

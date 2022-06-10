@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout } from "antd";
 import Sidebar from "../sidebar/sidebar";
-import { Children } from "../sidebar/model";
+import { Children } from "../../Model/model";
 
 const { Content } = Layout;
 

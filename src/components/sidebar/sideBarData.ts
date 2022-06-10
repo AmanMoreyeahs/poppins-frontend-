@@ -15,7 +15,7 @@ import {
   QuestionCircleOutlined,
 } from "@ant-design/icons";
 import { SettingOutlined } from "@ant-design/icons";
-import { SideMenu } from "./model";
+import { SideMenu } from "../../Model/model";
 
 export const SidebarData: SideMenu[] = [
   {
@@ -50,7 +50,7 @@ export const SidebarData: SideMenu[] = [
   },
   {
     title: TITLE.ORDERS,
-    path: ROUTES.ORDER,
+    path: "#",
     icon: ShoppingCartOutlined,
   },
   {

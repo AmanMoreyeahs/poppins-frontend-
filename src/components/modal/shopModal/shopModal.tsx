@@ -1,8 +1,7 @@
-import { Modal } from "antd";
 import React from "react";
-import { ModalProps } from "../../sidebar/model";
+import { ModalProps } from "../../../Model/model";
 import { ModalWrapper } from "../../style";
-
+import { ShopModalContent } from "../components/modalComponent";
 export const ShareModal: React.FC<ModalProps> = ({ visible, setvisible }) => {
   return (
     <>
@@ -12,7 +11,9 @@ export const ShareModal: React.FC<ModalProps> = ({ visible, setvisible }) => {
         onCancel={() => setvisible(false)}
         width={426}
         footer={""}
-      ><h1>content</h1></ModalWrapper>
+      >
+        <ShopModalContent />
+      </ModalWrapper>
     </>
   );
 };
